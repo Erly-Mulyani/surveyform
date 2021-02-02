@@ -1,0 +1,81 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<head>
+  <title>membuat survey form - freecodecamp</title>
+</head>
+
+<body>
+  <header>
+    <section class="title-text">
+      <h1 id="title">Survey Form</h1>
+      <p id="description" class="title-text"><em style="font-size: 90%;">Beri tahu kami bagaimana kami dapat meningkatkan freeCodeCamp</em></p>
+    </section>
+  </header>
+  
+  <main>
+    <form id="survey-form">
+      <section id="survey-fields">
+        <label for="name" id="name-label">* Nama:</label>
+        <input id="name" type="text" placeholder="masukkan nama anda" required>
+        <label for="Email" id="email-label">* Email:</label>
+        <input id="email" type="email" placeholder="masukkan alamat email anda" required>
+        <label for="number" id="number-label">* Usia:</label>
+        <input id="number" type="number" placeholder="masukkan usia anda" min=1 max=125 required>
+        <label for="dropdown">Opsi mana yang paling menggambarkan peran Anda saat ini?</label>
+        <select id="dropdown" form="survey-form">
+          <option value="" disabled selected>pilih salah satu opsi</option>
+          <option value="student">Pelajar/Mahasiswa</option>
+          <option value="full-time-job">Pekerja</option>
+          <option value="full-time-learner">
+Pengajar</option>
+          <option value="prefer-not">
+Memilih untuk tidak menjawab</option>
+          <option value="other">Lainnya</option>
+        </select>
+        <label for="recommendation">* Seberapa besar kemungkinan Anda akan merekomendasikan freeCodeCamp kepada teman?</label>
+        <fieldset id="recommendation">
+          <label for="r_definitely"><input type="radio" name="recommend" id="r_definitely" value="definitely" required>Pastinya</label>
+          <label for="r_maybe"><input type="radio" name="recommend" id="r_maybe" value="maybe" required>Mungkin</label>
+          <label for="r_not_sure"><input type="radio" name="recommend" id="r_not_sure" value="notsure" required>tidak yakin</label>
+        </fieldset>
+        
+        <label for="likethemost">Apa yang paling Anda sukai di freeCodeCamp:</label>
+        <select id="likethemost">
+          <option value="" disabled selected>pilih salah satu opsi</option>
+          <option value="challenges">Tantangan</option>
+          <option value="projects">Proyek</option>
+          <option value="community">Komunitas</option>
+          <option value="open-source">Belajar</option>
+        </select>
+      
+
+        <label for="improvements">Hal-hal yang harus ditingkatkan di masa depan:</label>
+        <fieldset id="improvements">
+          <legend>(<em>Centang semua yang sesuai</em>)</legend>
+          <label for="c-datav"><input type="checkbox" name="improve-checks" id="c-datav" value="datav">
+Visualisasi data</label>
+          <label for="c-chlgs"><input type="checkbox" name="improve-checks" id="c-chlgs" value="chlgs">Tantangan</label>
+          <label for="c-ghr"><input type="checkbox" name="improve-checks" id="c-ghr" value="ghr">Bantuan</label>
+          <label for="c-vid"><input type="checkbox" name="improve-checks" id="c-vid" value="vid">Video</label>
+          <label for="c-forum"><input type="checkbox" name="improve-checks" id="c-forum" value="forum">
+Forum</label>
+          <label for="c-addcours"><input type="checkbox" name="improve-checks" id="c-addcours" value="addcours">Kursus Tambahan</label>
+        </fieldset>
+        <label for="comments">
+Ada Komentar atau Saran?</label>
+        <textarea style="height:50px;resize:vertical;" id="comments" placeholder="kritik atau saran"></textarea>
+      </section>
+      <button id="submit">submit</button>
+    </form>
+  </main>
+ 
+</body>
